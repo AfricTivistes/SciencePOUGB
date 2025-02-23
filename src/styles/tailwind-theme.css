@@ -1,0 +1,42 @@
+/**
+ * * Tailwind theme settings
+ * 
+ * These are in a separate file so it can be imported into <style> tags in .astro components
+ */
+@theme {
+	/* primary colors - Basé sur le bleu Science */
+	--color-primary-50: #eef3ff;
+	--color-primary-100: #e0e9ff;
+	--color-primary-200: #c7d6fe;
+	--color-primary-300: #a4bafd;
+	--color-primary-400: #8098fa;
+	--color-primary-500: #3B5EF5;
+	--color-primary-600: #2C47DD;
+	--color-primary-700: #1F35C4;
+	--color-primary-800: #162B9E;
+	--color-primary-900: #0F1D75;
+	--color-primary-950: #0A1356;
+
+	/* base colors */
+	--color-base-50: #fafafa;
+	--color-base-100: #f4f4f5;
+	--color-base-200: #e4e4e7;
+	--color-base-300: #d4d4d8;
+	--color-base-400: #a1a1aa;
+	--color-base-500: #71717a;
+	--color-base-600: #52525b;
+	--color-base-700: #3f3f46;
+	--color-base-800: #27272a;
+	--color-base-900: #18181b;
+	--color-base-950: #09090b;
+
+	/* other colors - Basé sur les couleurs UGB */
+	--color-info: #3B5EF5;
+	--color-info-foreground: #ffffff;
+	--color-success: #4CAF50;
+	--color-success-foreground: #ffffff;
+	--color-warning: #FFC107;
+	--color-warning-foreground: #000000;
+	--color-error: #E53935;
+	--color-error-foreground: #ffffff;
+}

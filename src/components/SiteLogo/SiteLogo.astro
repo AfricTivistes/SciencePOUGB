@@ -1,0 +1,21 @@
+
+---
+import { Image } from "astro:assets";
+
+// data
+import siteData from "@config/siteData.json";
+
+// images
+import logo from "@images/site-logo.png";
+---
+
+<a class="primary-focus flex items-center align-middle" href="/" aria-label="Home">
+	<Image
+		src={logo}
+		alt="Logo SciencePO UGB"
+		loading="eager"
+		width={157}
+		height={80}
+		class="w-[157px] h-[80px] pt-4"
+	/>
+</a>
