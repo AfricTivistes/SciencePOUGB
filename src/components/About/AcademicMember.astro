@@ -1,0 +1,59 @@
+
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+interface SocialLink {
+  platform: string;
+  url: string;
+}
+
+interface Props {
+  name: string;
+  role: string;
+  image: string;
+  description: string;
+  socialLinks: SocialLink[];
+}
+
+const { name, role, image, description, socialLinks } = Astro.props;
+---
+
+<div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg">
+  <div class="p-6">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="flex-shrink-0 mb-4 sm:mb-0">
+        <Image
+          src={image}
+          alt={`Photo de ${name}`}
+          width={100} 
+          height={100}
+          class="w-24 h-24 object-cover rounded-full border-4 border-primary-100"
+        />
+      </div>
+      <div class="text-center sm:text-left">
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white">{name}</h3>
+        <p class="text-primary-600 dark:text-primary-400 font-medium">{role}</p>
+        
+        <div class="flex justify-center sm:justify-start mt-2 space-x-3">
+          {socialLinks.map(link => (
+            <a 
+              href={link.url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+            >
+              <Icon name={`tabler:brand-${link.platform}`} class="h-5 w-5" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-4">
+      <p class="text-gray-600 dark:text-gray-300">
+        {description}
+      </p>
+    </div>
+  </div>
+</div>

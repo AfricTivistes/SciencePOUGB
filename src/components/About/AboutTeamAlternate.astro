@@ -1,245 +1,31 @@
-
 ---
-import { Icon } from 'astro-icon/components';
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import AcademicMember from "./AcademicMember.astro";
+import { academicMembers } from "@data/academicTeam.js";
 ---
 
-<section class="about-team-alternate py-14 md:py-24 text-base-900">
-  <div class="container px-4 mx-auto">
-    <div class="flex justify-center mb-6 md:mb-12">
-      <div class="sm:max-w-md text-center">
-        <h2 class="text-3xl leading-none font-bold md:text-4xl mb-4 text-primary-600">Notre Équipe d'Experts</h2>
-        <p class="opacity-80">Les spécialistes qui animent notre club et contribuent à son rayonnement académique.</p>
-      </div>
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="inline-block px-3 py-1 text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 rounded-full mb-4">Nos Encadrants</span>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Encadrement Académique</h2>
+      <div class="w-20 h-1 bg-primary-600 mx-auto mb-4"></div>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
+        Notre club bénéficie du soutien et de l'expertise d'un groupe d'enseignants-chercheurs dévoués, qui guident les étudiants dans leurs projets académiques et professionnels.
+      </p>
     </div>
-    <div class="grid grid-cols-6 gap-6">
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
-            alt="Photo du professeur Amadou Diop"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Pr. Amadou Diop</h4>
-          <h6 class="font-medium">Professeur / Encadreur</h6>
-          <p class="opacity-70 mb-0">Spécialiste en relations internationales et géopolitique africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
-            alt="Photo de Mme Fatou Sow"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Fatou Sow</h4>
-          <h6 class="font-medium">Maître de conférences</h6>
-          <p class="opacity-70 mb-0">Spécialiste en politiques publiques et développement institutionnel.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
-            alt="Photo de M. Omar Ba"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Omar Ba</h4>
-          <h6 class="font-medium">Chargé de recherche</h6>
-          <p class="opacity-70 mb-0">Expert en science politique comparée et systèmes électoraux africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
-            alt="Photo de Mme Aïssatou Diallo"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Aïssatou Diallo</h4>
-          <h6 class="font-medium">Responsable pédagogique</h6>
-          <p class="opacity-70 mb-0">Spécialiste en sociologie politique et mouvements sociaux ouest-africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
-            alt="Photo de M. Cheikh Ndiaye"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">M. Cheikh Ndiaye</h4>
-          <h6 class="font-medium">Doctorant chercheur</h6>
-          <p class="opacity-70 mb-0">Chercheur sur les politiques de développement et la gouvernance locale.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
-            alt="Photo de Mme Aminata Sidibé"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Mme Aminata Sidibé</h4>
-          <h6 class="font-medium">Assistante de recherche</h6>
-          <p class="opacity-70 mb-0">Spécialiste des relations internationales et de la diplomatie africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      {academicMembers.map((member) => (
+        <AcademicMember 
+          name={member.name}
+          role={member.role}
+          image={member.image}
+          description={member.description}
+          socialLinks={member.socialLinks}
+        />
+      ))}
     </div>
   </div>
 </section>
