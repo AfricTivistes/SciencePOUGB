@@ -2,6 +2,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 import siteData from '@config/siteData.json';
+import { Image } from 'astro:assets';
+import contactImage from '../../data/blog/competition-inter-universitaire/cover1.jpg';
 ---
 
 <section class="section-container bg-white">
@@ -46,10 +48,14 @@ import siteData from '@config/siteData.json';
         </div>
       </div>
       <div class="col-span-12 lg:col-span-6 lg:col-start-7 order-2 mb-4 lg:mb-0">
-        <div
-          class="bg-center bg-no-repeat bg-cover min-h-[150px] w-full h-full"
-          style="background-image: url(https://cdn.easyfrontend.com/pictures/contact/contact_7.png)"
-        >
+        <div class="min-h-[150px] w-full h-full relative">
+          <Image 
+            src={contactImage}
+            alt="Image de contact Club Science Politique" 
+            width={600}
+            height={400}
+            class="w-full h-full object-cover absolute"
+          />
           <div class="flex flex-col justify-center h-full -ml-14">
             <div class="bg-gray-100 shadow-md max-w-[350px] mt-6 flex items-center rounded-lg p-5">
               <Icon name="tabler:info-circle" class="w-8 h-8 text-primary-600" />
