@@ -1,242 +1,575 @@
 
 ---
-import { Icon } from 'astro-icon/components';
+import { Image } from "astro:assets";
+import profilImage from "../../assets/images/profil.png";
 ---
 
-<section class="about-team-alternate py-14 md:py-24 text-base-900">
-  <div class="container px-4 mx-auto">
-    <div class="flex justify-center mb-6 md:mb-12">
-      <div class="sm:max-w-md text-center">
-        <h2 class="text-3xl leading-none font-bold md:text-4xl mb-4 text-primary-600">Notre Équipe d'Experts</h2>
-        <p class="opacity-80">Les spécialistes qui animent notre club et contribuent à son rayonnement académique.</p>
-      </div>
+<section class="section-container py-14 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-primary-600 mb-3">Nos Encadrants Académiques</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Découvrez les professeurs qui accompagnent et soutiennent notre club dans ses activités académiques et de recherche.
+      </p>
     </div>
-    <div class="grid grid-cols-6 gap-6">
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
-            alt="Photo du professeur Amadou Diop"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Pr. Ibrahima SILLA -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Ibrahima SILLA" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Pr. Amadou Diop</h4>
-          <h6 class="font-medium">Professeur / Encadreur</h6>
-          <p class="opacity-70 mb-0">Spécialiste en relations internationales et géopolitique africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Ibrahima SILLA</h3>
+            <p class="text-gray-700 font-medium">Professeur Titulaire</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en droit constitutionnel et institutions politiques africaines.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
-            alt="Photo de Mme Fatou Sow"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Pr. Alassane NDAO -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Alassane NDAO" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Fatou Sow</h4>
-          <h6 class="font-medium">Maître de conférences</h6>
-          <p class="opacity-70 mb-0">Spécialiste en politiques publiques et développement institutionnel.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Alassane NDAO</h3>
+            <p class="text-gray-700 font-medium">Professeur Associé</p>
+            <p class="text-gray-600 mt-2">
+              Expert en systèmes politiques comparés et théories de l'État en Afrique.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
-            alt="Photo de M. Omar Ba"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Pr. El Hadji Mamadou MBAYE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. El Hadji Mamadou MBAYE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Omar Ba</h4>
-          <h6 class="font-medium">Chargé de recherche</h6>
-          <p class="opacity-70 mb-0">Expert en science politique comparée et systèmes électoraux africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. El Hadji Mamadou MBAYE</h3>
+            <p class="text-gray-700 font-medium">Maître de Conférences</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en relations internationales et politiques publiques africaines.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
-            alt="Photo de Mme Aïssatou Diallo"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Pr. El hadji Bouré DIOUF -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. El hadji Bouré DIOUF" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Aïssatou Diallo</h4>
-          <h6 class="font-medium">Responsable pédagogique</h6>
-          <p class="opacity-70 mb-0">Spécialiste en sociologie politique et mouvements sociaux ouest-africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. El hadji Bouré DIOUF</h3>
+            <p class="text-gray-700 font-medium">Maître de Conférences</p>
+            <p class="text-gray-600 mt-2">
+              Expert en sociologie politique et mouvements sociaux en Afrique de l'Ouest.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
-            alt="Photo de M. Cheikh Ndiaye"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Pr. Papa fara DIALLO -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Papa fara DIALLO" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">M. Cheikh Ndiaye</h4>
-          <h6 class="font-medium">Doctorant chercheur</h6>
-          <p class="opacity-70 mb-0">Chercheur sur les politiques de développement et la gouvernance locale.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Papa fara DIALLO</h3>
+            <p class="text-gray-700 font-medium">Professeur Titulaire</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en gouvernance et politique économique dans les pays en développement.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
-            alt="Photo de Mme Aminata Sidibé"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Pr. Sokhna mariama CISSE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Sokhna mariama CISSE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
           />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Sokhna mariama CISSE</h3>
+            <p class="text-gray-700 font-medium">Maître Assistante</p>
+            <p class="text-gray-600 mt-2">
+              Experte en genre et politique, spécialiste des questions de participation politique des femmes.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Mme Aminata Sidibé</h4>
-          <h6 class="font-medium">Assistante de recherche</h6>
-          <p class="opacity-70 mb-0">Spécialiste des relations internationales et de la diplomatie africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
+      </div>
+
+      <!-- Pr. Alassane BEYE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Alassane BEYE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Alassane BEYE</h3>
+            <p class="text-gray-700 font-medium">Professeur Associé</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en politiques publiques et développement territorial en Afrique subsaharienne.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Moda DIENG -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Moda DIENG" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Moda DIENG</h3>
+            <p class="text-gray-700 font-medium">Maître de Conférences</p>
+            <p class="text-gray-600 mt-2">
+              Expert en histoire politique africaine et dynamiques de démocratisation contemporaines.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Maurice Soudieck DIONE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Maurice Soudieck DIONE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Maurice Soudieck DIONE</h3>
+            <p class="text-gray-700 font-medium">Professeur Titulaire</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en théorie politique et analyse des systèmes électoraux africains.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Abdou Fattah NIANE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Abdou Fattah NIANE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Abdou Fattah NIANE</h3>
+            <p class="text-gray-700 font-medium">Maître de Conférences</p>
+            <p class="text-gray-600 mt-2">
+              Expert en analyse des conflits et processus de paix en Afrique de l'Ouest.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Mame Penda BA -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Mame Penda BA" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Mame Penda BA</h3>
+            <p class="text-gray-700 font-medium">Professeure Titulaire</p>
+            <p class="text-gray-600 mt-2">
+              Experte en relations internationales et politiques de développement en Afrique.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Papa Samba NDIAYE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Papa Samba NDIAYE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Papa Samba NDIAYE</h3>
+            <p class="text-gray-700 font-medium">Professeur Associé</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en géopolitique et sécurité régionale en Afrique de l'Ouest.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Sidy NDIAYE -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Sidy NDIAYE" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Sidy NDIAYE</h3>
+            <p class="text-gray-700 font-medium">Maître Assistant</p>
+            <p class="text-gray-600 mt-2">
+              Expert en politique comparée et institutions démocratiques en Afrique subsaharienne.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pr. Papa Ogo SECK -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <Image 
+            src={profilImage} 
+            alt="Pr. Papa Ogo SECK" 
+            width={80} 
+            height={80}
+            class="rounded-full object-cover w-20 h-20"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-primary-600">Pr. Papa Ogo SECK</h3>
+            <p class="text-gray-700 font-medium">Professeur Associé</p>
+            <p class="text-gray-600 mt-2">
+              Spécialiste en économie politique et développement durable en Afrique.
+            </p>
+            <div class="flex mt-3 space-x-3">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.059 10.059 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
