@@ -1,6 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import presiImage from "../../assets/team/01.jpg";
+import viceImage from "../../assets/team/03.jpg";
+import geneImage from "../../assets/team/04.jpg";
+import tresoImage from "../../assets/team/02.jpg";
 
 // Utilisons la même image pour tous les membres pour l'instant
 // Vous pourrez ajouter d'autres images team/02.jpg, team/03.jpg, etc. quand disponibles
@@ -9,27 +12,27 @@ const teamImage = presiImage;
 // Définition des données des membres de l'équipe
 const teamMembers = [
   {
-    name: "Amadou Diallo",
+    name: "Samba Diallo",
     role: "Président",
     image: teamImage,
     alt: "Photo du président"
   },
   {
-    name: "Fatou Sow",
+    name: "Fadil Koffe",
     role: "Vice-présidente",
-    image: teamImage,
+    image: viceImage,
     alt: "Photo de la vice-présidente"
   },
   {
-    name: "Aïda Ndiaye",
+    name: "Lamine Balde",
     role: "Secrétaire Générale",
-    image: teamImage,
+    image: geneImage,
     alt: "Photo de la secrétaire générale"
   },
   {
-    name: "Omar Ba",
+    name: "El Hadji Cisse",
     role: "Trésorier",
-    image: teamImage,
+    image: tresoImage,
     alt: "Photo du trésorier"
   }
 ];
