@@ -1,6 +1,7 @@
 
 ---
 import { Image } from "astro:assets";
+import presiImage from '../../assets/team/01.jpg'
 ---
 
 <section class="section-container bg-gray-50">
@@ -60,7 +61,7 @@ import { Image } from "astro:assets";
           class="border-[15px] border-transparent outline outline-[3px] outline-primary-600 rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] overflow-hidden shadow-lg relative"
         >
           <Image
-            src="https://cdn.easyfrontend.com/pictures/hero/hero-6.png"
+            src={presiImage}
             alt="Club Science Politique UGB"
             width={500}
             height={500}

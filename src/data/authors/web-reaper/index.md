@@ -1,8 +1,8 @@
 ---
-name: Web Reaper
-avatar: ./web-reaper.jpg
+name: sciencepolitiqueugb
+avatar: ./profil.png
 about: >-
   Helping you level up your web development and engineering skills.
-email: me@webreaper.dev
-authorLink: https://webreaper.dev
+email: info@sciencepolitiqueugb.org
+authorLink: https://sciencepolitiqueugb.org
 ---

@@ -1,8 +1,8 @@
 ---
-name: Second Author
-avatar: ./web-reaper.jpg
+name: sciencepolitiqueugb
+avatar: ./profil.png
 about: >-
   Helping you level up your web development and engineering skills.
-email: email@example.com
-authorLink: https://docs.webreaper.dev
+email: info@sciencepolitiqueugb.org
+authorLink: https://sciencepolitiqueugb.org
 ---
