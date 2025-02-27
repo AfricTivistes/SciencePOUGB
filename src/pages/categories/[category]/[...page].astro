@@ -43,12 +43,12 @@ const formattedCategory = categorify(category);
 ---
 
 <BaseLayout
-	title={`${formattedCategory} - Blog posts`}
-	description={`A collection of blog posts about ${formattedCategory}`}
+	title={`${formattedCategory} - Actualités`}
+	description={`Une collection d'actualités sur ${formattedCategory}`}
 >
 	<div class="mx-auto max-w-3xl pt-24 md:pt-36">
 		<h1 class="h1 text-center">
-			Blog Posts about <span class="main-text-gradient">{formattedCategory.toLowerCase()}</span>
+			<span class="main-text-gradient">{formattedCategory.toLowerCase()}</span>
 		</h1>
 		<hr class="bg-primary-600/50 mx-auto mt-4 max-w-[30%] rounded-full border-none pt-1" />
 		<div class="mt-10 grid gap-4 md:grid-cols-2">

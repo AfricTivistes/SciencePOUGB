@@ -1,0 +1,37 @@
+
+---
+import { Image } from "astro:assets";
+
+// layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// components
+import AboutSection from "@components/About/AboutSection.astro";
+import AboutStory from "@components/About/AboutStory.astro";
+import AboutActivities from "@components/About/AboutActivities.astro";
+import AboutTeam from "@components/About/AboutTeam.astro";
+import AboutTeamAlternate from "@components/About/AboutTeamAlternate.astro";
+
+// data
+import siteData from "@config/siteData.json";
+---
+
+<BaseLayout title="Découvrez le Club Science Politique de l'UGB" description="Apprenez-en plus sur notre mission, nos activités et notre équipe au service de l'excellence académique en science politique.">
+	<div class="site-container">
+		<!-- Section À propos -->
+		<AboutSection />
+		
+		<!-- Notre Histoire -->
+		<AboutStory />
+		
+		<!-- Nos Activités -->
+		<AboutActivities />
+		
+		<!-- Notre Bureau Exécutif -->
+		<AboutTeam />
+		
+		<!-- Nos Encadrants Académiques -->
+		<AboutTeamAlternate />
+		
+	</div>
+</BaseLayout>

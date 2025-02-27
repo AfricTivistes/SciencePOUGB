@@ -1,49 +1,33 @@
 ---
-title: About Blogsmith
-description: All about Blogsmith! The best starter blog template for Astro.
+title: À propos du Club Science Politique
+description: Découvrez le Club Science Politique de l'UFR SJP de l'Université Gaston Berger de Saint-Louis.
 ---
 
-_Get your blog up and running in hours, not weeks._
+import AboutSection from "@components/About/AboutSection.astro";
 
-Blogsmith is the perfect way to showcase your writing and connect with your audience. It's built on Astro, a modern static site generator that's fast, lightweight, and SEO-friendly. And it uses Tailwind CSS, a powerful utility-first CSS framework that makes it easy to style your blog.
+<AboutSection />
 
-This is the free version with limited features. You can [purchase the pro version](https://cosmicthemes.com/themes/blogsmith-pro/) for only ~~$97~~ $47! The pro version includes additional features such as:
+## Notre Mission
 
-- Full i18n capabilities with configuration script
-- Keystatic CMS integration
-- Multiple Hero sections
-- Multiple blog layouts, including a sidebar and table of contents
-- Contact form
-- Newsletter signup form
-- Tags pages (in addition to category pages)
-- Multiple card components and layouts
-- Related Posts
-- Share Buttons in blog posts
-- JsonLD schema for SEO
-- **All future updates**
-- and more!
+Le Club Science Politique de l'Université Gaston Berger de Saint-Louis a pour mission de promouvoir l'étude et la pratique des sciences politiques, d'encourager la réflexion critique sur les questions politiques contemporaines et de favoriser le développement professionnel de ses membres.
 
-## Features
+## Nos Objectifs
 
-- **Fast and lightweight:** This theme is built on Astro, which means it's blazing fast and uses minimal resources. Your blog will load quickly and smoothly, even on slow connections.
-- **Markdown Blog Posts:** Blogsmith leverages Astro Content Collections, allowing your to write your blog posts in markdown or mdx, with markdown frontmatter validation.
-- **Categories:** Blogsmith supports categories, allowing you to group your blog posts by topic. This makes it easier for readers to find what they're looking for.
-- **Multiple Authors:** Blogsmith supports multiple authors, allowing you to add multiple authors, or use different authors for blog posts.
-- **SEO-friendly:** Blogsmith is designed to be SEO-friendly, so your blog posts will rank well in search results. It includes OG tags, Twitter cards, and other metadata that will help search engines understand what your blog is about.
-- **Responsive:** This theme is responsive, so it will look great on any device. Your blog will be easy to read and navigate, no matter what screen size it's viewed on.
-- **Optimized:** This theme is optimized for performance, so your blog will load quickly and smoothly. Images are optimized using Astro's build in optimization, and files are compressed when building.
-- **Tailwind CSS:** This theme uses Tailwind CSS, which makes it easy to style your blog. Just choose from the pre-defined utility classes and you're good to go.
-- **Flexible layout:** The theme comes with a flexible layout that you can customize to fit your needs. You can change the colors, fonts, and spacing to create a blog that reflects your unique style.
-- **Easy to use:** This theme is easy to use, with data and config files for you to configure important items on the website. You can get started with just a few clicks.
+- **Former et informer** : Offrir aux étudiants des ressources complémentaires pour approfondir leurs connaissances en sciences politiques.
+- **Débattre et échanger** : Créer un espace de dialogue où les idées peuvent être confrontées dans le respect et la rigueur intellectuelle.
+- **Connecter et réseauter** : Faciliter les liens entre étudiants, enseignants et professionnels du domaine politique.
+- **Représenter et valoriser** : Porter la voix des étudiants en sciences politiques et valoriser les travaux et initiatives des membres.
 
-## Benefits
+## Nos Activités
 
-- **Get more traffic:** A well-designed blog can help you attract more traffic to your website. This theme can help you do that by making your blog look professional and inviting.
-- **Build an audience:** A blog is a great way to build an audience and connect with people who are interested in what you have to say. This theme can help you do that by making it easy to share your content on social media and other platforms.
-- **Promote your business:** If you have a business, a blog can be a great way to promote your products or services. This theme can help you do that by making it easy to add calls to action to your blog posts.
+- Organisation de conférences et séminaires avec des intervenants de renom
+- Publication d'analyses et d'articles sur l'actualité politique
+- Visites d'institutions politiques et administratives
+- Débats sur des thèmes d'actualité
+- Ateliers de développement de compétences professionnelles
 
-## Get started
+## Rejoindre le Club
 
-To get started with this theme, you'll need to open the folder you download, run `npm install`, then run `npm run dev` to see the theme in your browser. Edit details in the site files to update whatever you need, and ship!
+L'adhésion au Club Science Politique est ouverte à tous les étudiants de l'Université Gaston Berger intéressés par les sciences politiques. Pour rejoindre le club, il suffit de remplir le formulaire d'adhésion disponible sur notre site ou de nous contacter directement.
 
-I hope this theme helps you create a beautiful and professional blog that you can be proud of.
+Nous sommes toujours à la recherche de nouveaux membres passionnés et motivés pour contribuer à la vie du club et participer à nos différentes activités.

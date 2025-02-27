@@ -1,0 +1,71 @@
+
+---
+import { Icon } from 'astro-icon/components';
+import siteData from '@config/siteData.json';
+---
+
+<section class="section-container bg-white">
+  <div class="container px-4 mx-auto">
+    <div class="grid grid-cols-12 py-6">
+      <div class="col-span-12 lg:col-span-5">
+        <div
+          class="bg-white rounded-2xl border-[25px] border-[#F4F7FD] p-6 md:p-12 shadow-md"
+        >
+          <h2 class="section-title mb-4">Contactez-nous</h2>
+          <p class="text-lg text-base-700 mb-10">Envoyez-nous un message pour toute question ou information.</p>
+
+          <form class="">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] border border-transparent rounded-lg focus:outline-none focus:border focus:border-primary-400 w-full px-5"
+                placeholder="Votre nom"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] border border-transparent rounded-lg focus:outline-none focus:border focus:border-primary-400 w-full px-5"
+                placeholder="Votre email"
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                name="message"
+                class="min-h-[48px] leading-[48px] bg-[#F2F6FD] border border-transparent rounded-lg focus:outline-none focus:border focus:border-primary-400 w-full px-5"
+                placeholder="Votre message"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="text-start">
+              <button type="submit" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg mb-4 font-medium transition duration-300">
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-span-12 lg:col-span-6 lg:col-start-7 order-2 mb-4 lg:mb-0">
+        <div
+          class="bg-center bg-no-repeat bg-cover min-h-[150px] w-full h-full"
+          style="background-image: url(https://cdn.easyfrontend.com/pictures/contact/contact_7.png)"
+        >
+          <div class="flex flex-col justify-center h-full -ml-14">
+            <div class="bg-gray-100 shadow-md max-w-[350px] mt-6 flex items-center rounded-lg p-5">
+              <Icon name="tabler:info-circle" class="w-8 h-8 text-primary-600" />
+              <a class="text-lg font-medium ml-4 text-base-800" href={`mailto:${siteData.author.email}`}>{siteData.author.email}</a>
+            </div>
+            <div class="bg-gray-100 shadow-md max-w-[350px] mt-6 flex items-center rounded-lg p-5">
+              <Icon name="tabler:category" class="w-8 h-8 text-primary-600" />
+              <span class="text-lg font-medium ml-4 text-base-800">Université Gaston Berger, Saint-Louis</span>
+            </div>
+            <div class="bg-gray-100 shadow-md max-w-[350px] mt-6 flex items-center rounded-lg p-5">
+              <Icon name="tabler:calendar-event" class="w-8 h-8 text-primary-600" />
+              <span class="text-lg font-medium ml-4 text-base-800">Horaires: Lun-Ven, 9h-17h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

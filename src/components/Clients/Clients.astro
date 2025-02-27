@@ -1,0 +1,19 @@
+
+---
+---
+<section class="clients-section py-8 md:py-12">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap justify-center items-center">
+      {Array.from({ length: 8 }).map((_, index) => (
+        <div class="px-5 my-3">
+          <img
+            src={`https://cdn.easyfrontend.com/pictures/logos/color-logo-${index + 1}.png`}
+            alt={`Logo partenaire ${index + 1}`}
+            class="max-h-[45px] h-auto max-w-full"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

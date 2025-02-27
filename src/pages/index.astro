@@ -8,6 +8,11 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import Hero from "@components/Hero/Hero.astro";
 import Button from "@components/Button/Button.astro";
 import PostCard from "@components/PostCard/PostCard.astro";
+import Clients from "@components/Clients/Clients.astro";
+import FeaturedProduct from "@components/Featured/FeaturedProduct.astro";
+import Stats from "@components/Stats/Stats.astro";
+import Features from "@components/Features/Features.astro";
+import CTA from "@components/CTA/CTA.astro";
 
 // utils
 import { getAllPosts, formatPosts } from "@js/blogUtils";
@@ -21,10 +26,12 @@ const recentPosts = formatPosts(posts, { limit: 3 });
 
 <BaseLayout title={siteData.title} description={siteData.description}>
 	<Hero />
-	<div class="site-container mt-10">
-		<!-- Recent blogs -->
-		<div class="mx-auto max-w-3xl md:mt-12">
-			<h2 class="h2 text-center">Recent Blog Posts</h2>
+	<div class="site-container">
+		<!-- Section Clients -->
+		<Clients />
+		<!-- Actualités du Club -->
+		<div class="mx-auto max-w-3xl mt-6 md:mt-8">
+			<h2 class="h2 text-center">Actualités du Club</h2>
 			<hr class="bg-primary-600/50 mx-auto mt-4 max-w-[30%] rounded-full border-none pt-1" />
 			<div class="mt-8 grid gap-4 md:grid-cols-2">
 				{
@@ -42,9 +49,29 @@ const recentPosts = formatPosts(posts, { limit: 3 });
 			</div>
 		</div>
 
-		<!-- link to all posts -->
+		<!-- lien vers toutes les actualités -->
 		<div class="mt-12 flex justify-center">
-			<Button variant="outline" arrow="right" href="/blog/">All Posts</Button>
+			<Button variant="outline" arrow="right" href="/blog/">Toutes les actualités</Button>
+		</div>
+
+		<!-- Section FeaturedProduct -->
+		<div class="mt-16">
+			<FeaturedProduct />
+		</div>
+
+		<!-- Section Stats -->
+		<div class="mt-16">
+			<Stats />
+		</div>
+
+		<!-- Section Features -->
+		<div class="mt-16">
+			<Features />
+		</div>
+
+		<!-- Section CTA -->
+		<div class="mt-16">
+			<CTA />
 		</div>
 	</div>
 </BaseLayout>

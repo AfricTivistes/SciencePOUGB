@@ -1,0 +1,24 @@
+
+---
+import { Image } from "astro:assets";
+
+// layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// components
+import ContactForm from "@components/Contact/ContactForm.astro";
+import CTA from "@components/CTA/CTA.astro";
+
+// data
+import siteData from "@config/siteData.json";
+
+// Contenu importé de la page Markdown
+import { getEntry } from "astro:content";
+---
+
+<BaseLayout title="Contactez le Club Science Politique" description="Entrez en contact avec le Club Science Politique de l'UFR SJP de l'Université Gaston Berger de Saint-Louis.">
+	<div class="site-container">
+		<!-- Section formulaire de contact -->
+		<ContactForm />
+	</div>
+</BaseLayout>

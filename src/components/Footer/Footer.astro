@@ -1,20 +1,66 @@
+
 ---
-// data
-import siteData from "@config/siteData.json";
-
-const today = new Date();
+import { Icon } from 'astro-icon/components';
+import siteData from '@config/siteData.json';
+const { socialLinks } = siteData;
 ---
 
-<footer class="text-base-800/70 mt-32 mb-2 text-center text-sm">
-	&copy; {today.getFullYear()} a theme by <a
-		href="https://cosmicthemes.com"
-		class="hover:text-primary-600"
-		target="_blank"
-		rel="noopener">Cosmic Themes</a
-	>
-	<!-- {siteData.name}. All rights reserved. -->
-</footer>
-
-<!-- Cosmic Themes is not affiliated with, endorsed, or sponsored by the
-Astro or Tailwind Labs teams. This website was built with Astro and Tailwind
-CSS. -->
+<section class="bg-primary-700 text-white py-8">
+  <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <p class="text-white font-medium">© 2024 - Tous droits réservés</p>
+      </div>
+      
+      <div class="my-6 md:my-0">
+        <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
+          <li>
+            <a class="text-white hover:underline transition" href="/">Accueil</a>
+          </li>
+          <li>
+            <a class="text-white hover:underline transition" href="/a-propos/">À Propos</a>
+          </li>
+          <li>
+            <a class="text-white hover:underline transition" href="/evenements/">Événements</a>
+          </li>
+          <li>
+            <a class="text-white hover:underline transition" href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <ul class="flex space-x-5">
+          {socialLinks?.facebook && (
+            <li>
+              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" aria-label="Facebook">
+                <Icon name="tabler:brand-facebook" class="w-6 h-6" />
+              </a>
+            </li>
+          )}
+          {socialLinks?.instagram && (
+            <li>
+              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" aria-label="Instagram">
+                <Icon name="tabler:brand-instagram" class="w-6 h-6" />
+              </a>
+            </li>
+          )}
+          {socialLinks?.linkedin && (
+            <li>
+              <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" aria-label="LinkedIn">
+                <Icon name="tabler:brand-linkedin" class="w-6 h-6" />
+              </a>
+            </li>
+          )}
+          {socialLinks?.tiktok && (
+            <li>
+              <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition" aria-label="TikTok">
+                <Icon name="tabler:brand-tiktok" class="w-6 h-6" />
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

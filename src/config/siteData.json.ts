@@ -12,13 +12,20 @@ export interface SiteDataProps {
 		src: string;
 		alt: string;
 	};
+	socialLinks?: {
+		facebook?: string;
+		twitter?: string;
+		instagram?: string;
+		linkedin?: string;
+		tiktok?: string;
+	};
 }
 
 // Update this file with your site specific information
 const siteData: SiteDataProps = {
 	name: "SciencePOUGB",
 	// Your website's title and description (meta fields)
-	title: "Club Science Politique de l’UFR SJP de l’Université   Gaston Berger de Saint-Louis",
+	title: "Club Science Politique de l’UFR SJP de l’Université Gaston Berger de Saint-Louis",
 	description:
 		"Site officiel du Club Science Politique de l'UGB. Retrouvez nos événements, publications, ressources pédagogiques et форумы de discussion. Espace membre pour étudiants et enseignants. Rejoignez-nous !",
 	useViewTransitions: true,
@@ -33,6 +40,12 @@ const siteData: SiteDataProps = {
 	defaultImage: {
 		src: "/images/cosmic-themes-logo.jpg",
 		alt: "Science PO UGB",
+	},
+	socialLinks: {
+		facebook: "https://www.facebook.com/profile.php?id=61557182136624",
+		instagram: "https://www.instagram.com/clubsciencepolitique",
+		linkedin: "https://www.linkedin.com/in/club-science-po-ugb-8257b7301/",
+		tiktok: "https://www.tiktok.com/@clubsciencepolitiqueugb",
 	},
 };
 

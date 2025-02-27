@@ -1,0 +1,88 @@
+
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<section class="section-container bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10 md:mb-14 mx-auto max-w-3xl">
+      <h2 class="section-title">Nos fonctionnalités</h2>
+      <p class="section-description">
+        Des outils pratiques et des ressources académiques pour améliorer votre parcours universitaire en science politique.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6 justify-end relative">
+      <div class="col-span-12 lg:col-span-6">
+        <div>
+          <!-- Item 1 -->
+          <div class="flex relative p-4 md:p-6 mb-6">
+            <div class="text-primary-600 rounded-full text-3xl mb-6 mr-6">
+              <Icon name="tabler:info-circle" class="w-10 h-10" />
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold mb-3">
+                Documentation académique
+              </h4>
+              <p class="text-base-700 opacity-80">
+                Accédez à une base de ressources pédagogiques complète, fiable et régulièrement mise à jour pour faciliter vos études et recherches.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="flex relative p-4 md:p-6 mb-6">
+            <div class="text-primary-600 rounded-full text-3xl mb-6 mr-6">
+              <Icon name="tabler:calendar-event" class="w-10 h-10" />
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold mb-3">
+                Événements et séminaires
+              </h4>
+              <p class="text-base-700 opacity-80">
+                Participez à des débats, conférences et séminaires exclusifs organisés par notre club pour enrichir votre formation académique.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="flex relative p-4 md:p-6 mb-6">
+            <div class="text-primary-600 rounded-full text-3xl mb-6 mr-6">
+              <Icon name="tabler:category" class="w-10 h-10" />
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold mb-3">
+                Réseau professionnel
+              </h4>
+              <p class="text-base-700 opacity-80">
+                Développez votre réseau professionnel et académique grâce à nos partenariats avec des institutions et des experts du domaine politique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-4">
+        <div class="h-full">
+          <div
+            class="bg-center bg-no-repeat bg-cover min-h-[350px] w-full lg:float-right lg:h-full rounded-lg"
+            style="background-image: url(https://cdn.easyfrontend.com/pictures/featured/featured_10.png);"
+          ></div>
+          <div
+            class="relative mx-12 -mt-12 rounded-xl overflow-hidden shadow-xl z-20 lg:absolute lg:top-12 lg:bottom-12 lg:left-[75%] lg:right-12 lg:m-0 lg:mt-10"
+          >
+            <div class="bg-center bg-no-repeat bg-cover rounded-xl p-0 pb-28" 
+                style="background-image: url(https://cdn.easyfrontend.com/pictures/shape-1.png);">
+              <div class="text-white rounded-xl bg-primary-600 leading-relaxed px-4 py-6 lg:px-6 lg:py-10">
+                <h4 class="text-2xl font-semibold mb-4">Adhésion</h4>
+                <p class="opacity-90">
+                  Rejoignez notre club de Science Politique pour bénéficier d'un accompagnement personnalisé et d'opportunités exclusives tout au long de votre parcours universitaire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

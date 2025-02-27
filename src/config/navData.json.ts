@@ -29,7 +29,7 @@ const navConfig: navItem[] = [
 	},
 	{
 		text: "À Propos",
-		link: "/about/",
+		link: "/a-propos/",
 	},
 	{
 		text: "Échos du Club",
@@ -37,7 +37,7 @@ const navConfig: navItem[] = [
 			{text: "Actualités",
 			link: "/blog/"},
 			{text: "Événements",
-			link: "/categories/productivity/"},
+			link: "/evenements/"},
 		]
 	},
 	{
@@ -49,6 +49,10 @@ const navConfig: navItem[] = [
 				link: `/categories/${category}/`,
 			};
 		}),
+	},
+	{
+		text: "Contact",
+		link: "/contact/",
 	},
 	{
 		text: "Pages",

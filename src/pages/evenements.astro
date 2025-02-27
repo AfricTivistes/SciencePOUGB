@@ -1,0 +1,26 @@
+
+---
+import { Image } from "astro:assets";
+
+// layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// components
+import EventsHeader from "@components/Events/EventsHeader.astro";
+import EventsPortfolio from "@components/Events/EventsPortfolio.astro";
+import CTA from "@components/CTA/CTA.astro";
+
+// data
+import siteData from "@config/siteData.json";
+---
+
+<BaseLayout title="Événements du Club Science Politique" description="Découvrez les événements et activités organisés par le Club Science Politique de l'UFR SJP de l'Université Gaston Berger de Saint-Louis.">
+	<div class="site-container">
+		
+		<!-- Portfolio des événements -->
+		<EventsPortfolio />
+		
+		<!-- Section CTA -->
+		<CTA />
+	</div>
+</BaseLayout>

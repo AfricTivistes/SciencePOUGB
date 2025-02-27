@@ -19,12 +19,12 @@ const { prevUrl, currPage, nextUrl, lastPage } = Astro.props as Props;
 				<div class="btn-group flex w-full justify-between py-3 md:py-4">
 					{prevUrl && (
 						<Button variant="outline" arrow="left" href={prevUrl}>
-							Prev
+							Précédent
 						</Button>
 					)}
 					{!prevUrl && (
 						<Button variant="outline" arrow="left" href={prevUrl} class="opacity-50" disabled>
-							Prev
+							Précédent
 						</Button>
 					)}
 
@@ -33,13 +33,13 @@ const { prevUrl, currPage, nextUrl, lastPage } = Astro.props as Props;
 					</Button>
 					{nextUrl && (
 						<Button variant="outline" arrow="right" href={nextUrl}>
-							Next
+							Suivant
 						</Button>
 					)}
 
 					{!nextUrl && (
 						<Button variant="outline" arrow="right" href={nextUrl} class="opacity-50" disabled>
-							Next
+							Suivant
 						</Button>
 					)}
 				</div>
