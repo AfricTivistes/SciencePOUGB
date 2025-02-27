@@ -1,243 +1,243 @@
 
 ---
-import { Image } from "astro:assets";
-
-// Importer l'image de profil
-import profilImage from "../../assets/images/profil.png";
+import { Icon } from 'astro-icon/components';
 ---
 
-<section class="bg-gray-100 py-20">
-  <div class="container mx-auto px-4">
-    <div class="mx-auto text-center mb-16">
-      <h2 class="h2">Nos Encadrants Académiques</h2>
-      <hr class="bg-primary-600/50 mx-auto mt-4 max-w-[30%] rounded-full border-none pt-1" />
-      <p class="text-lg mt-6 text-gray-600 max-w-2xl mx-auto">
-        Découvrez l'équipe d'enseignants-chercheurs qui guident et soutiennent les activités du Club Science Politique de l'UGB.
-      </p>
+<section class="about-team-alternate py-14 md:py-24 text-base-900">
+  <div class="container px-4 mx-auto">
+    <div class="flex justify-center mb-6 md:mb-12">
+      <div class="sm:max-w-md text-center">
+        <h2 class="text-3xl leading-none font-bold md:text-4xl mb-4 text-primary-600">Notre Équipe d'Experts</h2>
+        <p class="opacity-80">Les spécialistes qui animent notre club et contribuent à son rayonnement académique.</p>
+      </div>
     </div>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Pr. Ibrahima SILLA -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Ibrahima SILLA" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Ibrahima SILLA</h3>
-              <p class="text-primary-600">Relations Internationales</p>
-            </div>
+    <div class="grid grid-cols-6 gap-6">
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
+            alt="Photo du professeur Amadou Diop"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
+        </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">Pr. Amadou Diop</h4>
+          <h6 class="font-medium">Professeur / Encadreur</h6>
+          <p class="opacity-70 mb-0">Spécialiste en relations internationales et géopolitique africaine.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Spécialiste en géopolitique africaine et dynamiques régionales, ses recherches portent sur l'intégration politique des États d'Afrique de l'Ouest.</p>
         </div>
       </div>
-      
-      <!-- Pr. Alassane NDAO -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Alassane NDAO" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Alassane NDAO</h3>
-              <p class="text-primary-600">Sociologie Politique</p>
-            </div>
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
+            alt="Photo de Mme Fatou Sow"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
+        </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Fatou Sow</h4>
+          <h6 class="font-medium">Maître de conférences</h6>
+          <p class="opacity-70 mb-0">Spécialiste en politiques publiques et développement institutionnel.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Expert des mouvements sociaux et de l'analyse des comportements électoraux en Afrique francophone. Il étudie l'impact du numérique sur la participation citoyenne.</p>
         </div>
       </div>
-      
-      <!-- Pr. El Hadji Mamadou MBAYE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. El Hadji Mamadou MBAYE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. El Hadji Mamadou MBAYE</h3>
-              <p class="text-primary-600">Administration Publique</p>
-            </div>
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
+            alt="Photo de M. Omar Ba"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
+        </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Omar Ba</h4>
+          <h6 class="font-medium">Chargé de recherche</h6>
+          <p class="opacity-70 mb-0">Expert en science politique comparée et systèmes électoraux africains.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Ses travaux sur la gouvernance publique et la décentralisation ont contribué à l'amélioration des politiques territoriales au Sénégal et dans la sous-région.</p>
         </div>
       </div>
-      
-      <!-- Pr. El hadji Bouré DIOUF -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. El hadji Bouré DIOUF" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. El hadji Bouré DIOUF</h3>
-              <p class="text-primary-600">Théorie Politique</p>
-            </div>
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
+            alt="Photo de Mme Aïssatou Diallo"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
+        </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Aïssatou Diallo</h4>
+          <h6 class="font-medium">Responsable pédagogique</h6>
+          <p class="opacity-70 mb-0">Spécialiste en sociologie politique et mouvements sociaux ouest-africains.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Chercheur reconnu dans le domaine de la pensée politique africaine et de ses interactions avec les théories politiques contemporaines globales.</p>
         </div>
       </div>
-      
-      <!-- Pr. Papa fara DIALLO -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Papa fara DIALLO" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Papa fara DIALLO</h3>
-              <p class="text-primary-600">Politiques Publiques</p>
-            </div>
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
+            alt="Photo de M. Cheikh Ndiaye"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
+        </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">M. Cheikh Ndiaye</h4>
+          <h6 class="font-medium">Doctorant chercheur</h6>
+          <p class="opacity-70 mb-0">Chercheur sur les politiques de développement et la gouvernance locale.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Analyse l'élaboration et l'évaluation des politiques publiques dans les domaines de l'éducation et de la santé en contexte africain.</p>
         </div>
       </div>
-      
-      <!-- Pr. Sokhna mariama CISSE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Sokhna mariama CISSE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Sokhna mariama CISSE</h3>
-              <p class="text-primary-600">Études de Genre</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Pionnière des études sur le genre et la participation politique des femmes en Afrique de l'Ouest, avec un focus sur les mécanismes d'inclusion.</p>
+      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
+        <div class="mr-4">
+          <img
+            src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
+            alt="Photo de Mme Aminata Sidibé"
+            class="max-w-full h-auto rounded"
+            width="120"
+          />
         </div>
-      </div>
-      
-      <!-- Pr. Alassane BEYE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Alassane BEYE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Alassane BEYE</h3>
-              <p class="text-primary-600">Droit Constitutionnel</p>
-            </div>
+        <div class="about-team-alternate-content">
+          <h4 class="text-2xl font-medium mb-2 text-primary-600">Mme Aminata Sidibé</h4>
+          <h6 class="font-medium">Assistante de recherche</h6>
+          <p class="opacity-70 mb-0">Spécialiste des relations internationales et de la diplomatie africaine.</p>
+          <div class="mt-4 flex space-x-4">
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Facebook"
+            >
+              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="LinkedIn"
+            >
+              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
+              aria-label="Twitter"
+            >
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
+            </a>
           </div>
-          <p class="text-gray-600">Expert en droit constitutionnel comparé et en systèmes électoraux africains, ses travaux éclairent les processus de démocratisation en cours.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Moda DIENG -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Moda DIENG" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Moda DIENG</h3>
-              <p class="text-primary-600">Économie Politique</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Spécialiste des questions de développement économique et de leurs implications politiques dans le contexte des États africains post-coloniaux.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Maurice Soudieck DIONE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Maurice Soudieck DIONE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Maurice Soudieck DIONE</h3>
-              <p class="text-primary-600">Histoire Politique</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Historien de la politique africaine contemporaine, ses recherches portent sur l'évolution des institutions politiques et les transitions démocratiques.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Abdou Fattah NIANE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Abdou Fattah NIANE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Abdou Fattah NIANE</h3>
-              <p class="text-primary-600">Géopolitique</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Ses analyses des dynamiques géopolitiques africaines et des relations afro-européennes font référence dans le domaine des études stratégiques.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Mame Penda BA -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Mame Penda BA" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Mame Penda BA</h3>
-              <p class="text-primary-600">Philosophie Politique</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Philosophe engagée, elle explore les fondements théoriques de la démocratie en Afrique et les enjeux de citoyenneté dans les sociétés plurielles.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Papa Samba NDIAYE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Papa Samba NDIAYE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Papa Samba NDIAYE</h3>
-              <p class="text-primary-600">Relations Internationales</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Expert des organisations internationales et de la diplomatie africaine, il étudie les stratégies d'insertion des États africains dans la gouvernance mondiale.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Sidy NDIAYE -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Sidy NDIAYE" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Sidy NDIAYE</h3>
-              <p class="text-primary-600">Science Politique Comparative</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Ses travaux comparatifs sur les systèmes politiques africains offrent des perspectives novatrices sur les trajectoires institutionnelles post-indépendance.</p>
-        </div>
-      </div>
-      
-      <!-- Pr. Papa Ogo SECK -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-20 h-20 rounded-full overflow-hidden mr-4">
-              <Image src={profilImage} alt="Pr. Papa Ogo SECK" width={100} height={100} class="w-full h-full object-cover" />
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold text-primary-700">Pr. Papa Ogo SECK</h3>
-              <p class="text-primary-600">Politique Environnementale</p>
-            </div>
-          </div>
-          <p class="text-gray-600">Pionnier des études sur la gouvernance environnementale en Afrique, il analyse les politiques publiques face aux défis climatiques et à la gestion des ressources naturelles.</p>
         </div>
       </div>
     </div>
