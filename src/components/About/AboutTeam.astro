@@ -1,30 +1,35 @@
 ---
 import { Image } from "astro:assets";
+import presiImage from "../../assets/team/01.jpg";
+
+// Utilisons la même image pour tous les membres pour l'instant
+// Vous pourrez ajouter d'autres images team/02.jpg, team/03.jpg, etc. quand disponibles
+const teamImage = presiImage;
 
 // Définition des données des membres de l'équipe
 const teamMembers = [
   {
     name: "Amadou Diallo",
     role: "Président",
-    image: "https://cdn.easyfrontend.com/pictures/team/team_square_1.jpeg",
+    image: teamImage,
     alt: "Photo du président"
   },
   {
     name: "Fatou Sow",
     role: "Vice-présidente",
-    image: "https://cdn.easyfrontend.com/pictures/team/team_square_2.jpeg",
+    image: teamImage,
     alt: "Photo de la vice-présidente"
   },
   {
     name: "Aïda Ndiaye",
     role: "Secrétaire Générale",
-    image: "https://cdn.easyfrontend.com/pictures/team/team_square_4.jpeg",
+    image: teamImage,
     alt: "Photo de la secrétaire générale"
   },
   {
     name: "Omar Ba",
     role: "Trésorier",
-    image: "https://cdn.easyfrontend.com/pictures/team/team_square_3.jpeg",
+    image: teamImage,
     alt: "Photo du trésorier"
   }
 ];
