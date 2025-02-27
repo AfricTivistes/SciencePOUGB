@@ -25,9 +25,11 @@ import { Image } from "astro:assets";
         </div>
       </div>
       <div class="w-full md:w-1/2">
-        <img
-          src="https://cdn.easyfrontend.com/pictures/ecommerce/product29.jpg"
+        <Image
+          src={import("../../assets/event/12.jpg")}
           alt="Club Science Politique"
+          width={600}
+          height={400}
           class="rounded-lg max-w-full h-auto mt-4 mx-auto shadow-md"
         />
       </div>
