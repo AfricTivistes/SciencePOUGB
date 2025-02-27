@@ -1,243 +1,104 @@
-
 ---
-import { Icon } from 'astro-icon/components';
+import { Image } from "astro:assets";
+import profilImage from "@assets/images/profil.png";
 ---
 
-<section class="about-team-alternate py-14 md:py-24 text-base-900">
-  <div class="container px-4 mx-auto">
-    <div class="flex justify-center mb-6 md:mb-12">
-      <div class="sm:max-w-md text-center">
-        <h2 class="text-3xl leading-none font-bold md:text-4xl mb-4 text-primary-600">Notre Équipe d'Experts</h2>
-        <p class="opacity-80">Les spécialistes qui animent notre club et contribuent à son rayonnement académique.</p>
-      </div>
+<section class="about-team-alternate py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-primary-600 text-white text-sm font-medium px-3 py-1 rounded-full mb-2">Notre Équipe</span>
+      <h2 class="h2 mb-4">Nos Encadrants Académiques</h2>
+      <p class="text-lg text-base-700 max-w-2xl mx-auto">Des enseignants-chercheurs passionnés qui guident et soutiennent les activités du Club Science Politique.</p>
     </div>
-    <div class="grid grid-cols-6 gap-6">
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
-            alt="Photo du professeur Amadou Diop"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Encadrant 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+        <div class="mb-4 w-32 h-32 overflow-hidden rounded-full border-4 border-primary-100">
+          <Image
+            src={profilImage}
+            alt="Dr. Mamadou Sow"
+            width={128}
+            height={128}
+            class="w-full h-full object-cover"
           />
         </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Pr. Amadou Diop</h4>
-          <h6 class="font-medium">Professeur / Encadreur</h6>
-          <p class="opacity-70 mb-0">Spécialiste en relations internationales et géopolitique africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
+        <h3 class="text-xl font-semibold text-primary-700">Dr. Mamadou Sow</h3>
+        <p class="text-base-500 mb-3">Maître de Conférences en Science Politique</p>
+        <p class="text-base text-base-700 text-center mb-4">Spécialiste des relations internationales et de la géopolitique africaine.</p>
+        <div class="flex space-x-3">
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
-            alt="Photo de Mme Fatou Sow"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Encadrant 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+        <div class="mb-4 w-32 h-32 overflow-hidden rounded-full border-4 border-primary-100">
+          <Image
+            src={profilImage}
+            alt="Dr. Fatou Diop"
+            width={128}
+            height={128}
+            class="w-full h-full object-cover"
           />
         </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Fatou Sow</h4>
-          <h6 class="font-medium">Maître de conférences</h6>
-          <p class="opacity-70 mb-0">Spécialiste en politiques publiques et développement institutionnel.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
+        <h3 class="text-xl font-semibold text-primary-700">Dr. Fatou Diop</h3>
+        <p class="text-base-500 mb-3">Professeure en Sociologie Politique</p>
+        <p class="text-base text-base-700 text-center mb-4">Experte en mouvements sociaux et participation politique des femmes en Afrique.</p>
+        <div class="flex space-x-3">
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
-            alt="Photo de M. Omar Ba"
-            class="max-w-full h-auto rounded"
-            width="120"
+
+      <!-- Encadrant 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+        <div class="mb-4 w-32 h-32 overflow-hidden rounded-full border-4 border-primary-100">
+          <Image
+            src={profilImage}
+            alt="Dr. Moussa Kane"
+            width={128}
+            height={128}
+            class="w-full h-full object-cover"
           />
         </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Omar Ba</h4>
-          <h6 class="font-medium">Chargé de recherche</h6>
-          <p class="opacity-70 mb-0">Expert en science politique comparée et systèmes électoraux africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
-            alt="Photo de Mme Aïssatou Diallo"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Dr. Aïssatou Diallo</h4>
-          <h6 class="font-medium">Responsable pédagogique</h6>
-          <p class="opacity-70 mb-0">Spécialiste en sociologie politique et mouvements sociaux ouest-africains.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
-            alt="Photo de M. Cheikh Ndiaye"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">M. Cheikh Ndiaye</h4>
-          <h6 class="font-medium">Doctorant chercheur</h6>
-          <p class="opacity-70 mb-0">Chercheur sur les politiques de développement et la gouvernance locale.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-        <div class="mr-4">
-          <img
-            src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
-            alt="Photo de Mme Aminata Sidibé"
-            class="max-w-full h-auto rounded"
-            width="120"
-          />
-        </div>
-        <div class="about-team-alternate-content">
-          <h4 class="text-2xl font-medium mb-2 text-primary-600">Mme Aminata Sidibé</h4>
-          <h6 class="font-medium">Assistante de recherche</h6>
-          <p class="opacity-70 mb-0">Spécialiste des relations internationales et de la diplomatie africaine.</p>
-          <div class="mt-4 flex space-x-4">
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Facebook"
-            >
-              <Icon name="tabler:brand-facebook" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="LinkedIn"
-            >
-              <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              class="text-primary-600 opacity-70 transition duration-300 hover:opacity-100"
-              aria-label="Twitter"
-            >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-            </a>
-          </div>
+        <h3 class="text-xl font-semibold text-primary-700">Dr. Moussa Kane</h3>
+        <p class="text-base-500 mb-3">Enseignant-Chercheur en Droit Public</p>
+        <p class="text-base text-base-700 text-center mb-4">Spécialiste du droit constitutionnel et des institutions politiques africaines.</p>
+        <div class="flex space-x-3">
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-primary-600 hover:text-primary-800">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
