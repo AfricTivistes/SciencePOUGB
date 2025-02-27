@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { Image } from "astro:assets";
+import profilImage from "../../assets/images/profil.png";
 
 // Définition des données des experts
 const experts = [
@@ -8,7 +9,7 @@ const experts = [
     name: "Pr. Amadou Diop",
     role: "Professeur / Encadreur",
     description: "Spécialiste en relations internationales et géopolitique africaine.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user28.jpg",
+    image: profilImage,
     alt: "Photo du professeur Amadou Diop",
     social: [
       { name: "facebook", url: "#" },
@@ -20,7 +21,7 @@ const experts = [
     name: "Dr. Fatou Sow",
     role: "Maître de conférences",
     description: "Spécialiste en politiques publiques et développement institutionnel.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user8.jpg",
+    image: profilImage,
     alt: "Photo de Mme Fatou Sow",
     social: [
       { name: "facebook", url: "#" },
@@ -32,7 +33,7 @@ const experts = [
     name: "Dr. Omar Ba",
     role: "Chargé de recherche",
     description: "Expert en science politique comparée et systèmes électoraux africains.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user27.jpg",
+    image: profilImage,
     alt: "Photo de M. Omar Ba",
     social: [
       { name: "facebook", url: "#" },
@@ -44,7 +45,7 @@ const experts = [
     name: "Dr. Aïssatou Diallo",
     role: "Responsable pédagogique",
     description: "Spécialiste en sociologie politique et mouvements sociaux ouest-africains.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user15.jpg",
+    image: profilImage,
     alt: "Photo de Mme Aïssatou Diallo",
     social: [
       { name: "facebook", url: "#" },
@@ -56,7 +57,7 @@ const experts = [
     name: "M. Cheikh Ndiaye",
     role: "Doctorant chercheur",
     description: "Chercheur sur les politiques de développement et la gouvernance locale.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user26.jpg",
+    image: profilImage,
     alt: "Photo de M. Cheikh Ndiaye",
     social: [
       { name: "facebook", url: "#" },
@@ -68,7 +69,7 @@ const experts = [
     name: "Mme Aminata Sidibé",
     role: "Assistante de recherche",
     description: "Spécialiste des relations internationales et de la diplomatie africaine.",
-    image: "https://cdn.easyfrontend.com/pictures/users/user10.jpg",
+    image: profilImage,
     alt: "Photo de Mme Aminata Sidibé",
     social: [
       { name: "facebook", url: "#" },
@@ -91,11 +92,12 @@ const experts = [
       {experts.map(expert => (
         <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
           <div class="mr-4">
-            <img
+            <Image
               src={expert.image}
               alt={expert.alt}
+              width={120}
+              height={120}
               class="max-w-full h-auto rounded"
-              width="120"
             />
           </div>
           <div class="about-team-alternate-content">
